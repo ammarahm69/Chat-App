@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -41,18 +42,14 @@ const Login = () => {
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
-              />
-              <label
-                htmlFor="remember-me"
-                className="block ml-2 text-sm text-gray-900"
-              >
-                Remember me
-              </label>
+                <Link
+                to="/signup"
+                >
+              <p className="font-medium text-indigo-600 hover:text-indigo-500">
+                Create Account
+              </p>
+                
+                </Link>
             </div>
 
             <div className="text-sm">
