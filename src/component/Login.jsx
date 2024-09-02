@@ -22,7 +22,7 @@ const Login = () => {
           text: `Hello ${fullName}`,
           icon: "success",
         });
-        navigate("/");
+        navigate("/home");
       })
       .catch((error) => {
         console.error("Error logging in:", error);

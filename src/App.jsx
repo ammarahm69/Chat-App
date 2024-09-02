@@ -8,11 +8,11 @@ import SignUp from "./component/SignUp";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/loading" element={<Loading />} />
       <Route path="*" element={<NotFound />} errorElement={<NotFound />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
     </Routes>
   );
 }
