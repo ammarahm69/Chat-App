@@ -80,7 +80,7 @@ const Login = () => {
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Link to="/signup">
+              <Link to="/">
                 <p className="font-medium text-indigo-600 hover:text-indigo-500">
                   Create Account
                 </p>

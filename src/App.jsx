@@ -11,8 +11,8 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/loading" element={<Loading />} />
       <Route path="*" element={<NotFound />} errorElement={<NotFound />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }
