@@ -17,15 +17,18 @@ const SignUp = () => {
         // Signed up
         const user = userCredential.user;
         console.log("User signed up:", user);
+
+        // Store the full name in local storage
+        localStorage.setItem("fullName", name);
+        console.log("Stored name:", localStorage.getItem("fullName")); // Check if value is stored
+
         Swal.fire({
           title: "Signed Up!",
           text: "Account created successfully.",
           icon: "success",
         });
 
-        setTimeout(() => {
-          navigate("/login");
-        }, 2000);
+        navigate("/login");
       })
       .catch((error) => {
         const errorMessage = error.message;
